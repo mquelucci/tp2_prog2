@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Remover turma</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		fieldset{
+			border: 3px solid dodgerblue;
+                        width: 20%;
+			color: white;
+                        background-color: rgba( 0 , 0, 0, 0.5);
+		}
+		legend{
+			border: 1px solid white;
+			padding: 10px;
+			text-align: center;
+			background-color: dodgerblue;
+			border-radius: 10px;
+		}
+	
+		#submit{
+			background-image: linear-gradient(to right, rgb(62, 151, 235), rgb(26, 46, 73));
+			padding: 5px;
+			width: 100%;
+			cursor: pointer;
+			color: white;
+			border-radius: 10px;
+			font-size: 15px;
+		
+		}
+		#submit:hover{
+			background-image: linear-gradient(to right, rgb(47, 0, 255), rgb(130, 105, 243));
+		}
+		form {
+			display: flex;
+			justify-content: center;
+		}
+	</style>
+</head>
+
+<body>
+		
+<div class="menu">
+	<a href="index.html" target="_blank">Home </a>
+	<a href="login.html" target="_blank">Login</a>
+	<a href="historia.html" target="_blank">História</a>
+	<a href="cadpes.html" target="_blank">Cadastrar pessoas</a>
+	<a href="cadtur.html" target="_blank">Cadastrar turma</a>
+	<a href="rempes.html" target="_blank">Remover pessoas</a>
+	<a href="atualizarpes.html" target="_blank">Atualizar pessoa</a>
+	<a href="atualizatur.html" target="_blank">Atualizar turma</a>
+	<a href="consultatur.html" target="_blank">Consultar turma</a>
+	<a href="consultapes.html" target="_blank">Consultar pessoas</a>
+	<a href="relatorios.html" target="_blank">Relatórios</a>
+</div>
+<hr>
+<div>
+      <form action="meuservidor.php">
+	   <fieldset>
+		   <legend><b>Remover turma</b></legend><br>
+		   <label for="pessoas" class="labelInput"><b>Selecionar turma:</b></label>
+		   <select name="pessoas" id="pessoas">
+			<option value="pilates" title="pilates">PIL</option>
+			<option value="musculacao1" title="Musculação 1">MUSC1</option>
+			<option value="musculacao2" title="Musculação 2">MUSC2</option>
+			<option value="musculacao3" title="Musculação 3">MUSC3</option>
+			<option value="crossfit" title="Crossfit">CFT</option>
+
+		   </select><br><br>
+			 <input type="submit" name="submit" id="submit" value="Remover">
+		    
+	   </fieldset>
+	  </form>
+
+</div>
+<hr>
+<footer>
+	<h4 class="footer">Desenvolvido por Matheus Quelucci, Felipe Júnio e Tales Pádua </h4>
+	<h4 class="footer"> Tecnologia em Redes de Computadores - IFSULDEMINAS </h4>
+</footer>
+</body>
+
+
+</html>

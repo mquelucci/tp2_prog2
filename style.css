@@ -1,0 +1,93 @@
+*{
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url("backgnd.png") no-repeat right top;
+    background-size: 200px;
+    background-color: #1e90ff;
+    
+}
+
+.menu{
+    margin-right: 200px ;
+    max-width: 1500px;
+}
+
+a{
+    border: 2px solid black;
+    position: relative;
+    top: 50%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    margin:1px 1px;
+    padding:10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.5%;
+    transition: .3s;    
+}
+
+a:hover, a:active {
+    background-color: rgb(62, 151, 235);
+    color: white;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    position: relative;
+    
+}
+.footer{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color:white;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+caption{
+    border: 1px solid black;
+    font-family: Georgia, 'Times New Roman', sans-serif;
+    background-color: #439a86;
+    text-align: center;
+    border-collapse: collapse;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+thead{
+    font-family: Arial, Helvetica, sans-serif;
+}
+tr, td, th{
+    background-color: #c8d5b9;
+    border:2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+tbody{
+    background-color: greenyellow
+}
+
+.t {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    
+}
+.table{
+    display: flex;
+    gap: 70px;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+ul{
+    list-style:circle;
+}
