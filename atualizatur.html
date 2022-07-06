@@ -44,44 +44,53 @@
 	</style>
 </head>
 
-<body>
+	<body onoffline="off()">
 		
-<div class="menu">
-	<a href="index.html" target="_blank">Home </a>
-	<a href="login.html" target="_blank">Login</a>
-	<a href="historia.html" target="_blank">História</a>
-	<a href="cadpes.html" target="_blank">Cadastrar pessoas</a>
-	<a href="cadtur.html" target="_blank">Cadastrar turma</a>
-	<a href="remtur.html" target="_blank">Remover turmas</a>
-	<a href="rempes.html" target="_blank">Remover pessoas</a>
-	<a href="atualizarpes.html" target="_blank">Atualizar pessoa</a>
-	<a href="consultatur.html" target="_blank">Consultar turma</a>
-	<a href="consultapes.html" target="_blank">Consultar pessoas</a>
-	<a href="relatorios.html" target="_blank">Relatórios</a>
-</div>
-<hr>
-<div>
-	<form action="meuservidor.php">
-	 <fieldset>
-		 <legend>Atualizar turma</legend><br>
-		 <label for="turmas" class="labelInput">Selecionar turma:</label>
-		 <select name="turmas" id="turmas">
-		  <option value="pilates" title="pilates">PIL</option>
-		  <option value="musculacao1" title="Musculação 1">MUSC1</option>
-			 <option value="musculacao2" title="Musculação 2">MUSC2</option>
-			 <option value="musculacao3" title="Musculação 3">MUSC3</option>
-			 <option value="crossfit" title="Crossfit">CFT</option>
-		  </select><br> <br>
-		   <input type="submit" name="submit" id="submit" value="Atualizar">
-		  
-	 </fieldset>
-	</form>
+		<ul class="menu">
+			<li><a href="index.html" target="_blank">Home</a></li>
+			<li><a href="relatorios.html" target="_blank">Relatórios</a></li>	
+			<li><a href="historia.html" target="_blank">História</a></li>
+			<li class="dropdown">
+				  <a href="javascript:void(0)" class="dropbtn">CRUD</a>
+				<div class="dropdown-content">
+					<a href="cadpes.html" target="_blank">Cadastrar pessoas</a>
+					<a href="cadtur.html" target="_blank">Cadastrar turma</a>
+					<a href="remtur.html" target="_blank">Remover turmas</a>
+					<a href="rempes.html" target="_blank">Remover pessoas</a>	
+					<a href="atualizatur.html" target="_blank">Atualizar turma</a>		
+					<a href="atualizarpes.html" target="_blank">Atualizar pessoa</a>
+					<a href="consultatur.html" target="_blank">Consultar turma</a>
+					<a href="consultapes.html" target="_blank">Consultar pessoas</a>
+			  </div>
+			</li>
+			<li id="login"><a href="login.html">Login</a></li>
+		</ul>
 
-</div>
-<hr>
-<footer>
-	<h4 class="footer">Desenvolvido por Matheus Quelucci, Felipe Júnio e Tales Pádua </h4>
-	<h4 class="footer"> Tecnologia em Redes de Computadores - IFSULDEMINAS </h4>
-</footer>
-</body>
+		<section>
+			<hr>
+			<div>
+				<form action="meuservidor.php">
+					<fieldset>
+						<legend>Atualizar turma</legend><br>
+						<label for="turmas" class="labelInput">Selecionar turma:</label>
+						<select name="turmas" id="turmas">
+						<option value="pilates" title="pilates">PIL</option>
+						<option value="musculacao1" title="Musculação 1">MUSC1</option>
+							<option value="musculacao2" title="Musculação 2">MUSC2</option>
+							<option value="musculacao3" title="Musculação 3">MUSC3</option>
+							<option value="crossfit" title="Crossfit">CFT</option>
+						</select><br> <br>
+						<input type="submit" name="submit" id="submit" value="Atualizar">
+						
+					</fieldset>
+				</form>
+			</div>
+		</section>
+		<footer>
+			<hr>
+			<h4 class="footer">Desenvolvido por Matheus Quelucci, Felipe Júnio e Tales Pádua </h4>
+			<h4 class="footer"> Tecnologia em Redes de Computadores - IFSULDEMINAS </h4>
+		</footer>
+		<script src="script.js"></script>
+	</body>
 </html>

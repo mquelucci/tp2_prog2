@@ -4,35 +4,77 @@
 }
 
 body {
-    background: url("backgnd.png") no-repeat right top;
-    background-size: 200px;
+    background: url("backgnd.png") no-repeat bottom right;
+    background-size: 150px;
     background-color: #1e90ff;
+    background-attachment: fixed;
     color: white;
 }
 
 .menu{
-    margin-right: 200px ;
-    max-width: 1500px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
-a{
-    border: 2px solid black;
-    position: relative;
-    top: 50%;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-    margin:1px 1px;
-    padding:10px 20px;
-    text-decoration: none;
+#login{
+    float: right;
+    border-right: none;
+    border-left: 1px solid #bbb;
+}
+ul li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+  
+  ul li a, .dropbtn {
     display: inline-block;
-    margin-top: 0.5%;
-    transition: .3s;    
-}
-
-a:hover, a:active {
-    background-color: rgb(62, 151, 235);
     color: white;
-}
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul li a:hover, .dropdown:hover .dropbtn {
+    background-color: #0566c7;
+  }
+  
+  ul li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#333 ;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #bbb;
+  }
+
+  .dropdown-content a:last-child{
+    border: none;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: #0566c7;
+      display: block;
+    }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 h1{
     text-align: center;
     font-size: 50px;
@@ -41,14 +83,14 @@ h1{
     position: relative;
     
 }
-.footer{
+footer h4{
+        margin-top: 5px;
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
         color:white;
 }
 footer{
-    padding-top: 10px;
-    padding-bottom: 0px;
+    padding-top: 5px;
 }
 
 table{
