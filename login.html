@@ -69,26 +69,32 @@
 		}
 	</style>
 </head>
-<body>
-	<div class="menu">
-		<a href="index.html" target="_blank">Home </a>
-	    <a href="historia.html" target="_blank">História</a>
-		<a href="cadpes.html" target="_blank">Cadastrar pessoas</a>
-		<a href="cadtur.html" target="_blank">Cadastrar turma</a>
-		<a href="remtur.html" target="_blank">Remover turmas</a>
-		<a href="rempes.html" target="_blank">Remover pessoas</a>
-		<a href="atualizarpes.html" target="_blank">Atualizar pessoa</a>
-		<a href="atualizatur.html" target="_blank">Atualizar turma</a>
-		<a href="consultatur.html" target="_blank">Consultar turma</a>
-		<a href="consultapes.html" target="_blank">Consultar pessoas</a>
-		<a href="relatorios.html" target="_blank">Relatórios</a>
-	</div>
+<body onoffline="off()">
+	<ul class="menu">
+		<li><a href="index.html" target="_blank">Home</a></li>
+		<li><a href="relatorios.html" target="_blank">Relatórios</a></li>	
+		<li><a href="historia.html" target="_blank">História</a></li>
+		<li class="dropdown">
+		  	<a href="javascript:void(0)" class="dropbtn">CRUD</a>
+			<div class="dropdown-content">
+				<a href="cadpes.html" target="_blank">Cadastrar pessoas</a>
+				<a href="cadtur.html" target="_blank">Cadastrar turma</a>
+				<a href="remtur.html" target="_blank">Remover turmas</a>
+				<a href="rempes.html" target="_blank">Remover pessoas</a>	
+				<a href="atualizatur.html" target="_blank">Atualizar turma</a>		
+				<a href="atualizarpes.html" target="_blank">Atualizar pessoa</a>
+				<a href="consultatur.html" target="_blank">Consultar turma</a>
+				<a href="consultapes.html" target="_blank">Consultar pessoas</a>
+		  </div>
+		</li>
+		<li id="login"><a href="login.html">Login</a></li>
+	</ul>
 	<hr>
 	
 <div>
 	<form action="meuservidor.php">
 		<fieldset>
-			 <legend><b>Login</b></legend>
+			 <legend>Login</legend>
 			 <div class="inputBox">
 				 <input type="text" name="email" id="email" class="inputUser" required>
 				 <label for="email" class="labelInput">Digite seu email ou telefone</label>
@@ -99,7 +105,7 @@
 				  <label for="senha" class="labelInput">Digite sua senha</label>
 			   </div>
 			   <br><br>
-			   <input type="submit" name="submit" id="submit" value="ENTRAR">
+			   <input type="submit" name="submit" id="submit" onclick="login()" value="ENTRAR">
 			   <br>
 		</fieldset>
 	</form>
@@ -109,6 +115,7 @@
 	 <h4 class="footer">Desenvolvido por Matheus Quelucci, Felipe Júnio e Tales Pádua </h4>
 	 <h4 class="footer"> Tecnologia em Redes de Computadores - IFSULDEMINAS </h4>
  </footer>
+ <script src="script.js"></script>
 </body>
 
 
